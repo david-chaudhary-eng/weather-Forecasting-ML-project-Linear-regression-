@@ -22,15 +22,23 @@ dataframe=pd.read_csv('C:/Users/user/Downloads/seattle-weather.csv')
 print(dataframe.shape)
 
 print(dataframe.describe())
+
 dataframe.plot(x='temp_min' , y='temp_max', style='o')
+
 plt.title('Min temperature vs Max temperature')
+
 plt.xlabel('Min temperature')
+
 plt.ylabel('Max temperature')
+
 plt.show()
 
 plt.figure(figsize=(15,10))
+
 plt.tight_layout()
+
 sns.displot(dataframe['temp_max'])
+
 plt.show()
 
 # separate the train and test data
